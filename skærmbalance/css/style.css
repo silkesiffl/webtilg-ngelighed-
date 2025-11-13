@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*Side 1, header*/
+
+header{
+width: 100%;
+background-color: #FAF8F5;
+}
+
+/*Side 1, startside, første sektoin*/
+
+header img{
+    height: auto;
+    width: 150px;
+    margin-top: 1em;
+    margin-left: 1em;
+}
+
+.section-1{
+    background-color: #D1DEC0;
+    padding: 2em 1em;
+}
+
+.section-1 h1{
+    margin-bottom: 0.8em;
+    background-color: #D1DEC0;
+    margin-left: 0.4em;
+    margin-right: 0.4em;
+    margin-top: 0.5em;
+    font-family: "Source Serif 4", serif;
+    font-weight: 900;
+    font-size: 1.6rem;
+    
+}
+
+.section-1 p{
+    background-color: #D1DEC0;
+    margin-bottom: 2em;
+    margin-left: 0.4em;
+    margin-right: 0.4em;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 1rem;
+
+}
+
+.section-1 a{
+    background-color: #C25D2E;
+    border-radius: 15px;
+    padding: 0.4em 0.7em;
+    text-decoration: none;
+    color: black;
+    max-width: 180px;
+    margin-left: 0.4em;
+    margin-right: 0.4em;
+    font-family: "Source Serif 4", serif;
+    font-weight: 700;
+
+}
+
+.forside-ikon{
+    display: grid;
+    grid-template-columns:  65% 35%;
+    margin-top: 0.5em;
+    font-size: 1rem;
+}
+
+.section-1 img{
+  grid-column: 2;             
+  height:80px;
+  max-width: 100%;
+  margin-right: 0.5em;
+}
+
+/*Side 1, de tre faktabokse, anden sektoin*/
+
+.section-2{
+    background-color: #FAF8F5;
+    text-align: center;
+}
+
+.grøn-boks{
+    background-color: #D1DEC0;
+    border-radius: 15px;
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    margin-bottom: 0.5em;
+    
+}
+
+.grøn-boks img { 
+  width: 80%;
+  height: auto;
+  margin: 0.5em auto;
+}
+
+.kasse-1{
+    padding-top: 2em;
+}
+
+.kasse-2{
+    margin-top: 1.5em;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.kasse-3{
+    margin-top: 1.5em;
+    padding-bottom: 2em;
+}
+
+.section-2 p:first-of-type {
+    font-family: "Source Serif 4", serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-bottom: 0.4em;
+}
+
+.section-2 p:last-of-type{
+    font-size: 1rem;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+   
+   
+    
