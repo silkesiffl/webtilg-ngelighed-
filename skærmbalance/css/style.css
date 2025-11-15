@@ -87,6 +87,7 @@ header nav{
     font-family: "Source Serif 4", serif;
     font-weight: 900;
     font-size: 1.6rem;
+    margin-top: 0.7em;
     
 }
 
@@ -149,7 +150,6 @@ header nav{
     height: 70px;
     display: inline-block;
     margin-bottom: 0.5em;
-    
 }
 
 .grøn-boks img { 
@@ -163,14 +163,11 @@ header nav{
 }
 
 .kasse-2{
-    margin-top: 1.5em;
-    margin-left: 2em;
-    margin-right: 2em;
+    padding-top: 2em;
 }
 
 .kasse-3{
-    margin-top: 1.5em;
-    padding-bottom: 2em;
+   padding-top: 2em;
 }
 
 .section-2 p:first-of-type {
@@ -183,6 +180,7 @@ header nav{
 .section-2 p:last-of-type{
     font-size: 1rem;
     font-family: "Nunito Sans", sans-serif;
+     padding-bottom: 2em;
 }
 
 /*Første side, sektion 3, de tre klikbarebokse*/
@@ -213,7 +211,7 @@ header nav{
 }
 
 .section-3 a:hover{
-    border: 5px solid #B44E25;
+    border: 4px solid #B44E25;
 }
 
 .section-3 h3 {
@@ -292,6 +290,7 @@ header nav{
 
 .mission-knapper a:hover{
     background-color: #B44E25;
+    padding: 0.7em 1.9em;
 
 }
 
@@ -319,6 +318,145 @@ footer a:hover{
   color:#954723; /*Contrast Ratio 4.65:1*/
 }
 
+
+/*Responsivt design til større end en telefon*/
+
+@media screen and (min-width:768px){
+    
+    /*Navigationen*/
+    
+    #bars{
+        display: none; 
+    }
+
+    header nav{
+    display:block;
+    margin-right: 1em;
+}
+
+    nav ul{
+    display:flex;
+    align-items: center;   
+}
+
+nav ul :hover{
+    font-size: 1.03rem;
+}
+
+nav li {
+        padding: 0;
+        margin: 0;
+    }
+
+    nav a {
+        display: inline-block;
+        padding: 0.25em 0.9em; 
+       
+    }
+
+.navigation-grøn{
+    border-radius: 20px;
+    background-color: #D1DEC0;
+    
+   justify-content: center;
+    
+}
+header{
+    padding: 0.6rem 0.8rem; 
+    display: flex;
+    align-items: center;
    
-   
+}
+
+header img {
+    width: 190px;
+    height: auto;
+  }
+
+  header img:hover{
+    width: 200px;
+    
+  }
+
+
+/*Første side, startside, sektion 1*/
+
+.section-1{
+    display: grid;
+    grid-template-columns: 70% 30%; 
+    align-items: center;
+    padding: 2.5em 3em;
+}
+
+.section-1 h1, .section-1 p, .section-1 a{
+    grid-column: 1;  
+}
+
+.forside-ikon{
+    grid-column: 2;
+    grid-template-columns: 0;
+}
+
+.forside-ikon img{
+    width: 300px;            
+    height: auto;
+  }
+
+.section-1 p{
+    max-width: 750px;
+    font-size: 1.2rem;
+    margin-bottom: 1em;
+  }
+
+.section-1 h1{
+    max-width: 500px;
+    font-size: 1.9rem;
+    margin-top: 1.5em;
+}
+
+.section-1 a{
+    justify-self: start;
+    align-self: start;
+    padding: 0.6em 1em;
+    max-width: 250px;
+  }
+
+
+/*Første side, tre faktabokse, sektion 2*/
+
+.section-2{
+    display: flex;
+}
+
+.kasse-1, .kasse-2, .kasse-3{
+    justify-content: center;
+    margin: 1.5em auto;
+    margin-bottom: 1.5em;
+}
+
+.grøn-boks{
+    margin-bottom: 1.5em;
+}
+/*Første side, tre klikbare bokse, sektion 4*/
+
+.klikbare-bokse{
+    display: flex;
+}
+
+.section-3 a{
+    justify-content: center;
+}
+
+/*Første side, "vores mission", sektion 4*/
+
+.section-4 div{
+    max-width: 1000px;
+}
+
+.section-4 p{
+    max-width: 600px;
+    text-align: center;
+}
+
+}
     
