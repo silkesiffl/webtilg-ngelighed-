@@ -12,6 +12,12 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet"> 
 
+<!--Linker til Javascript-->
+    <script src="js/navigation.js" defer></script> 
+
+<!--Linker til Fontawsome-->
+    <script src="https://kit.fontawesome.com/a74fb2f5c7.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -19,7 +25,32 @@
 <!--Header--> 
 
     <header>
-        <img src="img/logo.png" alt="Skærmbalance logo">
+
+        <a href="index.html">
+            <img src="img/logo.png" alt="Skærmbalance logo">
+        </a>
+        
+         <nav>
+
+            <ul>
+
+
+                <li><a href="#">Hjem</a></li>
+                <li><a href="#">Forståelse & værktøjer</a></li>
+                <li><a href="#">Kontakt</a></li>
+
+            </ul>
+
+        </nav>
+
+         <!--Burgermenuen-->
+
+        <button id="bars">
+
+            <i class="fa-solid fa-bars"></i>  
+
+        </button>
+
     </header>
 
     <main>
@@ -81,15 +112,62 @@
 
         </section>
 
+        <section class="section-3">
 
+            <h2>Tag dit første skridt mod balance</h2>
 
+            <a href="#">
+                <h3>Forstå skærmbrug</h3>
+                <p>Slip skylden – bliv klogere på, hvorfor skærmen fanger vores opmærksomhed og kan være så svær at slippe</p>
+                <img src="img/hjerne-ikon.png" alt="">
+            </a>
+            
 
+            <a href="">
+                <h3>Vores værktøjer</h3>
+                <p>Find simple og brugbare strategier, der hjælper dig med at reducere skærmtid og skabe bedre balance</p>
+                <img src="img/værktøj-ikon.png" alt="">
 
+            </a>
+            
 
+            <a href="">
+                <h3>Kontakt</h3>
+                <p>Har du brug for sparring eller spørgsmål? Kontakt os og få støtte på vejen mod et sundere skærmforbrug</p>
+                <img src="img/kontakt-ikon.png" alt="">
+            </a>
+            
 
+        </section>
 
+        <section class="section-4">
+
+            <h3>Vores mission</h3>
+
+            <div>
+
+                <p>Skærm Balance hjælper unge med at skabe et sundere forhold til deres skærm.</p>
+                <p>Vi tror på, at små ændringer i hverdagen kan give mere ro, nærvær og energi.</p>
+                <p>Vores mission er at gøre det lettere at forstå, hvorfor skærmen fylder så meget, og give dig enkle værktøjer til at finde den rette balance mellem skærm og liv</p>
+
+                <div class="mission-knapper">
+
+                     <a href="#">Kom i gang</a>
+
+                     <a href="#">Kontakt os</a>
+
+                </div>
+
+            </div>
+        </section>
 
     </main>
+
+    <footer>
+        <a href="">Cvr</a>
+        <a href="">Kontakt</a>
+        <a href="">Om os</a>
+    </footer>
     
     
 </body>
