@@ -336,7 +336,8 @@ footer a:hover{
     text-align: center;
     font-family: "Source Serif 4", serif;
     font-size: 1.5rem;
-    margin-bottom: 1em;
+    margin-bottom: 1.5em;
+    margin-top: 1em;
     font-weight: 700;
 }
 
@@ -357,13 +358,13 @@ footer a:hover{
 
 .section-5 img{
     width: auto;
-    height: 80px;
+    height: 70px;
     margin-right: 1em;
 }
 
 .forstå-gruppe{
     display: grid;
-    grid-template-columns: 15% 85%;
+    grid-template-columns: 22% 78%;
     grid-template-areas: 
     "ikon overskrift"
     "tekst tekst";
@@ -374,16 +375,151 @@ footer a:hover{
 
   .forstå-gruppe h2{
     grid-area: overskrift;
-    text-align: center;
+    text-align: start;
   }
 
   .forstå-gruppe img{
     grid-area: ikon;
-    text-align: center;
+    text-align: start;
   }
 
   .forstå-tekst{
     grid-area: tekst;
+  }
+
+  /*Anden side, værktøjer/accordions, sektion 6*/
+
+  .section-6{
+    background-color: #FAF8F5;
+    padding: 3em 1em 1em;
+  }
+
+  .section-6 h2{
+    font-family: "Source Serif 4", serif;
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  .section-6 p{
+    font-size: 1rem;
+    font-family: "Nunito Sans", sans-serif;
+    margin: 1em 1.5em;
+    line-height: 1.8;
+    text-align: left;
+  }
+
+  /*Accordion*/
+
+  .accordion-group {
+  border: 3px solid #D1DEC0;
+  border-radius: 12px;
+  background-color: #FAF8F5;
+  overflow: hidden;     
+  margin-top: 1.5em;  
+}
+
+
+.accordion {
+  background-color: #FAF8F5;
+  color: black;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  padding: 0.5rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  font-family: "Source Serif 4", serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
+  justify-content: space-between;
+}
+
+.accordion img{
+  width: 30px;
+  height: auto;
+}
+
+.headline-img{
+  display: flex;
+  align-items: center;
+  gap: 0.75em;
+}
+
+.arrow {
+  font-size: 1.4rem;
+  transition: transform 0.3s ease;
+  text-align: right;
+  color: #C25D2E;
+}
+
+.arrow:hover{
+ font-size: 1.6em;
+}
+
+.accordion.active .arrow {
+  transform: rotate(180deg);
+}
+
+.panel {
+  margin-bottom: 1em;
+  margin-right: 1em;
+  margin-top: 1em;
+  background-color: #FAF8F5;
+  border: none;
+  display: none;
+  overflow: hidden;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 0.95rem;
+  text-align: left;
+}
+
+.panel li{
+    line-height: 1.7;
+}
+
+  /*Anden side, kontaktboks, sektion 7*/
+
+  .section-7{
+    background-color: #FAF8F5;
+    text-align: center;
+    padding: 3em 1.5em; 
+
+  }
+
+  .section-7 div{
+    background-color: #D1DEC0;
+    padding:3em 3em;
+    border-radius: 28px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .section-7 p{
+    font-size: 1rem;
+    font-family: "Nunito Sans", sans-serif;
+    margin-bottom: 1em;
+  }
+
+  .section-7 a{
+    text-decoration: none;
+    font-family: "Nunito Sans", sans-serif;
+    color: #000000;
+    background-color: #C25D2E;
+    display: inline-block;
+    padding: 1em 3em;
+    border-radius: 30px;
+    margin-top: 1.5em;
+  }
+
+  .section-7 a:hover{
+    background-color: #B44E25;
+    padding: 1.1em 3.2em;
   }
 
 
@@ -539,6 +675,7 @@ header img {
 
 .forstå-p{
     text-align: center;
+    
 }
 
   .forstå-gruppe{
@@ -571,6 +708,19 @@ header img {
     max-width: 950px;
   }
 
+  /*Anden side, værktøjer, sektion 6*/
+
+  .section-6 p{
+    text-align: center;
+  }
+
+  .panel p{
+    text-align: left;
+  }
+
+  .section-6{
+    padding: 3em 10em 2em;
+  }
 
 
 
