@@ -9,7 +9,7 @@ header{
 width: 100%;
 background-color: #FAF8F5;
 display: flex;
-justify-content: space-between;  /*Bruger flexbox og justify-content til at rykke burgermenuen til højre*/
+justify-content: space-between;  
 }
 
 header img{
@@ -21,7 +21,7 @@ header img{
 }
 
 header img:hover{
-    width: 165px;
+    width: 170px;
 }
 
 nav ul{
@@ -106,15 +106,16 @@ header nav{
     background-color: #C25D2E;
     border-radius: 20px;
     border: 1px solid #A64214;
-    padding: 0.5em 0.7em;
+    padding: 0.6em 1em;
     text-decoration: none;
     color: black;
-    max-width: 180px;
+    max-width: 160px;
     margin-left: 0.4em;
     margin-right: 0.4em;
     font-family: "Source Serif 4", serif;
     font-weight: 700;
     cursor: pointer;
+    display: inline-block;
 }
 
 .section-1 a:hover{
@@ -426,7 +427,6 @@ footer a:hover{
   width: 100%;
   text-align: left;
   border: none;
-  outline: none;
   transition: 0.4s;
   padding: 0.5rem 1.5rem;
   display: flex;
@@ -512,19 +512,173 @@ footer a:hover{
     color: #000000;
     background-color: #C25D2E;
     display: inline-block;
-    padding: 1em 3em;
+    padding: 0.8em 2.5em;
     border-radius: 30px;
     margin-top: 1.5em;
   }
 
   .section-7 a:hover{
     background-color: #B44E25;
-    padding: 1.1em 3.2em;
+    padding: 0.9em 2.6em;
   }
 
 
+  /*Tredje side, kontakt, sektion 8*/
+
+  .section-8{
+    background-color: #FAF8F5;
+    padding: 2em 1.5em;
+
+  }
+
+  .section-8 h1{
+font-family: "Source Serif 4", serif;
+  font-size: 1.6rem;
+
+  }
+
+  .section-8 p{
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 1.2rem;
+    margin-top: 0.5em;
+  }
+
+  .kontakt-information{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.8em 2em;           
+  padding: 3em 0 1em;   
+}
+
+.kontakt{
+      display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5em;
+  font-family:"Source Serif 4", serif;
+}
+
+.kontakt img{
+width: 36px;
+ height: auto;
+
+}
+
+.kontakt p {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.1em;
+  margin-top: 0.2em;
+}
 
 
+.kontakt h2{
+  font-family: "Source Serif 4", serif;
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+.kontakt-top{
+  display: flex;
+  gap: 1em;
+  align-items: center;
+}
+
+/*Kontaktformular*/
+
+.contact-wrapper{
+  display: block;
+}
+
+
+.kontaktform {
+  border-radius: 20px;
+  border: 2px solid #759753;
+  background-color: #D1DEC0;
+  padding: 1.3em;
+  width: 85%;
+  margin: 0 auto; 
+}
+
+.kontaktform h2{
+  font-family: "Source Serif 4", serif;
+  font-size: 1.3rem;
+}
+
+.kontakt-tekst{
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+input[type=text], input[type=email], input[type=tel], select, textarea{
+	width: 100%;
+	padding: 1em;
+	border: 1px solid #c5c5c5;
+	border-radius: 4px;
+	margin-top: 0.5em;
+	margin-bottom: 1em;
+}
+
+select, input[type=checkbox], input[type=radio], input[type=submit]{
+	cursor: pointer;
+}
+
+fieldset{
+	border-color: #DD7824;
+	border-style:double;
+	margin-bottom: 0.8em;
+}
+
+input[type=checkbox]{
+	margin: 0.8em 0em;
+}
+
+input[type=submit]{
+	background-color: #C25D2E;
+  font-family: "Nunito Sans", sans-serif;
+	color: black;
+	padding: 0.8em 1.2em;
+	border: none;
+	border-radius: 24px;
+	width: 100%;
+	font-size: 18px;
+}
+
+.kontaktform input,
+.kontaktform textarea,
+.kontaktform label {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+input[type=submit]:hover{
+	background-color: #B44E25;
+  padding: 0.85em 1.25em;
+}
+
+::placeholder{
+	color:black;
+}
+
+.background{
+  background-color: #FAF8F5;
+  padding: 1em 0 3em; 
+}
+
+.visually-hidden{ /*WCAG defineret class som fjerner element fra skærm, men som stadig kan læses af skærmlæseren*/
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+
+.br{
+  display: inline;
+}
 
 
 /*Responsivt design til større end en telefon*/
@@ -595,6 +749,12 @@ header img {
     align-items: center;
     padding: 2.5em 3em;
 }
+
+.section-1 a{
+  display: inline-block;
+  padding: 2em 4em;
+}
+
 
 .section-1 h1, .section-1 p, .section-1 a{
     grid-column: 1;  
@@ -678,6 +838,11 @@ header img {
     
 }
 
+.section-5 h2{
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
   .forstå-gruppe{
     display: grid;
     grid-template-rows: auto auto;  
@@ -722,8 +887,34 @@ header img {
     padding: 3em 10em 2em;
   }
 
+  /*Tredje side, kontakt*/
 
+  .contact-wrapper{
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    align-items: start;
+  
+  }
 
+  .kontakt-information {
+  gap: 3em 3em;  
 }
+
+.section-8 p{
+  margin-bottom: 4em;
+}
+
+.section-8 {
+  padding: 4em 5em;       
+}
+
+.br{
+display: none;
+}
+
+  }
+
+
+
 
     

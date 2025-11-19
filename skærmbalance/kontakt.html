@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="css/style.css">
+
+<!--Link til Google Fonts--> 
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet"> 
+
+<!--Linker til Javascript-->
+    <script src="js/navigation.js" defer></script> 
+
+<!--Linker til Fontawsome-->
+    <script src="https://kit.fontawesome.com/a74fb2f5c7.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+     <!--Header--> 
+
+    <header>
+
+        <a href="index.html">
+            <img src="img/logop2.svg" alt="Skærmbalance logo">
+        </a>
+        
+         <nav>
+
+            <ul>
+
+                <li><a href="index.html">Hjem</a></li>
+                <li><a href="forståelse.html">Forståelse & værktøjer</a></li> 
+                <div class="navigation-grøn"> <li><a href="kontakt.html">Kontakt</a></li></div>
+               
+
+            </ul>
+
+        </nav>
+
+         <!--Burgermenuen-->
+
+        <button id="bars">
+
+            <i class="fa-solid fa-bars"></i>  
+
+        </button>
+
+    </header>
+
+    <main>
+
+        <!--Trejde side, sektion 8-->
+
+    <section class="section-8">
+
+        <h1>Kontakt os</h1>
+
+        <p>Har du spørgsmål eller brug for støtte til sundere skærmevaner? <br class="br" aria-hidden="true"> Skriv til os eller send en besked gennem vores kontaktformular.</p>
+
+        <div class="contact-wrapper">
+        <div class="kontakt-information">
+
+            <div class="kontakt">
+                <div class="kontakt-top"><img src="img/email-ikon.png" alt="">
+                <h2>Email</h2></div>
+                <p>skærm@balance.dk</p>
+            </div>
+
+            <div class="kontakt">
+                <div class="kontakt-top">
+                <img src="img/instagram-ikon.png" alt="">
+                <h2>Instagram</h2> </div>
+                <p>skærm_balance</p>
+            </div>
+
+            <div class="kontakt">
+                <div class="kontakt-top">
+                <img src="img/telefon-ikon.png" alt="">
+                <h2>Telefon</h2></div>
+                <p>+45 21856107</p>
+            </div>
+
+            <div class="kontakt">
+                <div class="kontakt-top">
+                <img src="img/messenger-ikon.png" alt="">
+                <h2>Facebook</h2></div>
+                <p>@skærmbalance</p>
+            </div>
+
+        </div>
+
+  
+
+    <!--Kontaktformular-->
+
+    <div class="background">
+
+     <!--Kontaktform - hovedindhold--> 
+    <section class="kontaktform">
+        <h2>Kontakt os</h2>
+            <p class="kontakt-tekst">Skriv til os via kontaktformularen og vi vender tilbage til dig</p>
+
+     <!--Kontaktform - brug formtagget-->  
+            <form>
+
+                <label class="visually-hidden" for="navn">Navn</label>
+                <input id="navn" type="text" placeholder="Navn" required>
+
+                <label class="visually-hidden" for="mail">Email</label>
+                <input id="mail" type="email" placeholder="Email" required>
+
+                <label class="visually-hidden" for="tel">Telefon</label>
+                <input id="tel" type="tel" placeholder="Telefon">
+
+
+                <label for="besked">Besked</label>
+                <textarea id="besked" cols="30" rows="10"></textarea>
+
+                <input type="submit" name="submit" value="Send besked">
+            
+            </form>
+
+       
+    </section>
+    </div>
+    </div>
+
+      </section>
+
+        
+    </main>
+
+     <footer>
+        <a href="#">Cvr</a>
+        <a href="kontakt.html">Kontakt</a>
+        <a href="#">Om os</a>
+    </footer>
+    
+</body>
+
+
+
+</html>
