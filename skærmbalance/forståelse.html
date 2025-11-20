@@ -60,8 +60,8 @@
 
             <h1>Forstå dit skærmforbrug</h1>
 
-            <p class="forstå-p">At forstå hvorfor vi sidder fast i skærmen er et godt sted at starte, hvis du vil ændre din vane. </p>
-            <p class="forstå-p">Slip skylden – din hjerne, dine sociale behov og selve teknologien spiller alle en rolle. </p>
+            <p class="forstå-p">At forstå hvorfor vi sidder fast i skærmen er et godt sted at starte, hvis du vil ændre din vane. </p>
+            <p class="forstå-p">Slip skylden - din hjerne, dine sociale behov og selve teknologien spiller alle en rolle. </p>
             <p class="forstå-p">Når du ved, hvad der sker bag skærmen, kan du lettere tage kontrollen tilbage.</p>
 
             <div class="divider"></div>
@@ -111,7 +111,7 @@
 
             <div class="divider"></div>
 
-            <p class="forstå-p">Teknologien spiller på vores menneskelige natur, og derfor kan skærmen være svær at slippe – men det er ikke umuligt. </p>
+            <p class="forstå-p">Teknologien spiller på vores menneskelige natur, og derfor kan skærmen være svær at slippe - men det er ikke umuligt. </p>
             <p class="forstå-p">Se vores værktøjer og find din <em>skærmbalance.</em></p>
 
         </section>
@@ -128,12 +128,12 @@
             <!--Sæt tidsrammer-->
 
             <div class="accordion-group">
-            <button class="accordion">
+            <button class="accordion" id="accordion-1" aria-expanded="false" aria-controls="panel-1"> <!--Tilføjet ARIA for at øge tilgængeligheden-->
             <span class="headline-img"><img src="img/ur-ikon-hvid-baggrund.png" alt=""> Sæt tidsrammer op </span>
             <span class="arrow">▾</span>
             </button>
     
-            <div class="panel">
+            <div class="panel" id="panel-1" role="region" aria-labelledby="accordion-1" hidden> <!--Tilføjet ARIA for at øge tilgængeligheden-->
             <p><strong>Planlæg faste tidspunkter, hvor du lægger mobilen væk</strong></p>
             <ul>
             <li>Vent fx 30 minutter om morgenen, før du åbner din telefon</li>
@@ -146,17 +146,17 @@
          <!--Skab barrierer-->
 
          <div class="accordion-group">
-            <button class="accordion">
+            <button class="accordion" id="accordion-2" aria-expanded="false" aria-controls="panel-2">
             <span class="headline-img"><img src="img/skab-barrierer.png" alt=""> Skab barrierer </span>
             <span class="arrow">▾</span>
             </button>
     
-            <div class="panel">
+            <div class="panel" id="panel-2" role="region" aria-labelledby="accordion-2" hidden>
             <p><strong>Gør det sværere at bruge telefonen</strong></p>
             <ul>
-            <li>Læg den i et andet rum, når du læser, arbejder eller sover</li>
-            <li>Tag ikke telefonen med overalt fx lad den blive hjemme på en gåtur</li>
-            <li>Brug fysiske eller digitale barrierer, fx apps der beder dig vente et par sekunder, før du åbner sociale medier</li>
+            <li>Læg den i et andet rum, når du læser, arbejder eller sover</li>
+            <li>Tag ikke telefonen med overalt fx lad den blive hjemme på en gåtur</li>
+            <li>Brug fysiske eller digitale barrierer, fx apps der beder dig vente et par sekunder, før du åbner sociale medier</li>
             </ul>
             </div>
             </div>
@@ -164,12 +164,12 @@
               <!--Erstat med andre aktiviteter-->
 
             <div class="accordion-group">
-            <button class="accordion">
+            <button class="accordion" id="accordion-3" aria-expanded="false" aria-controls="panel-3">
             <span class="headline-img"><img src="img/blad-ikon.png" alt=""> Erstat med andre aktiviteter</span>
             <span class="arrow">▾</span>
             </button>
     
-            <div class="panel">
+            <div class="panel" id="panel-3" role="region" aria-labelledby="accordion-3" hidden>
             <p><strong>Fyld tiden ud med noget, der giver ro eller energi</strong></p>
             <ul>
             <li>Erstat den tid du normalt bruger på telefonen med andre vaner</li>
@@ -182,15 +182,15 @@
             <!--Skab balance med bevidsthed-->
 
             <div class="accordion-group">
-            <button class="accordion">
+            <button class="accordion" id="accordion-4" aria-expanded="false" aria-controls="panel-4">
             <span class="headline-img"><img src="img/balance-ikon.png" alt=""> Skab balance med bevidsthed</span>
             <span class="arrow">▾</span>
             </button>
     
-            <div class="panel">
-            <p><strong>Læg mærke til, hvordan din skærm påvirker dig – uden skyld</strong></p>
+            <div class="panel" id="panel-4" role="region" aria-labelledby="accordion-4" hidden>
+            <p><strong>Læg mærke til, hvordan din skærm påvirker dig - uden skyld</strong></p>
             <ul>
-            <li>Spørg dig selv: “Bruger jeg min telefon, fordi jeg har lyst, eller bare af vane?”</li>
+            <li>Spørg dig selv: “Bruger jeg min telefon, fordi jeg har lyst, eller bare af vane?”</li>
             <li>Små refleksioner hjælper dig med at genvinde kontrollen og finde din egen balance</li>
             </ul>
             </div>
